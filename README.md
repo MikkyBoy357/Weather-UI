@@ -4,7 +4,7 @@ A new Flutter application.
 
 ## 📸 ScreenShots
 
-<img src="images/home.png" width="400">
+<img src="screenshot/home.png" width="400">
 
 ## Getting Started
 
