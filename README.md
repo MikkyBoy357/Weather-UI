@@ -12,4 +12,4 @@ A new Flutter application.
 
 ## 📸 ScreenShots
 
-<img src="screenshots/login.png" width="400"/>
+<img src="screenshots/home.png" width="400"/>
