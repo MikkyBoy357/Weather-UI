@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -35,7 +34,7 @@ class _HomeState extends State<Home> {
   var lon;
 
   getWeather() async {
-    String city = 'Lagos';
+    String city = 'California';
     http.Response response = await http.get(
         'http://api.openweathermap.org/data/2.5/weather?q=$city&units=metric&appid=417e4395bb9fa381afd1a45ad65d9ca8');
     var results = jsonDecode(response.body);
@@ -152,7 +151,7 @@ class _HomeState extends State<Home> {
                         ),
                         trailing: Text(
                           temp != null
-                              ? temp.toString().trim() + "52\u00B0"
+                              ? temp.toString() + "\u00B0"
                               : 'Loading...',
                           style: kTextStyle,
                         ),
